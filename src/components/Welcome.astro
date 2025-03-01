@@ -1,0 +1,11 @@
+---
+// import logo from '~/assets/logo.svg'
+import logo from '~/assets/logo.png'
+
+let foo = Astro.locals.foo
+---
+
+<header class='flex flex-row items-center justify-between m-8'>
+  <img src={logo.src} width='128' height='128' alt='logo' />
+  <h1 class='text-4xl font-bold text-blue-700'>{foo}</h1>
+</header>

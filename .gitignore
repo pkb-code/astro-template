@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+**/*Zone.Identifier
+.DS_Store
+tmp
+.astro
+.env.push
+.vscode
