@@ -1,8 +1,10 @@
 import { createEnv } from '@t3-oss/env-core'
-// import { z } from 'zod'
+import { z } from 'zod'
 
 export const env = createEnv({
-  server: {},
+  server: {
+    DATABASE_URL: z.string().url(),
+  },
   client: {},
   clientPrefix: 'PUBLIC_',
   runtimeEnv: import.meta.env.SSR ? Object.assign({}, import.meta.env, process.env) : import.meta.env,
