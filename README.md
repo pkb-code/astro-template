@@ -27,7 +27,7 @@ The **minimal template** to get started with Astro. It includes:
 **Command:**
 
 ```bash
-pnpm create astro@latest -- --template pkb-code/astro-template
+pnpm create astro@latest --template pkb-code/astro-template
 ```
 
 ---
@@ -41,7 +41,7 @@ This template adds **tRPC** to the base project.
 **Command:**
 
 ```bash
-pnpm create astro@latest -- --template pkb-code/astro-template#with-trpc
+pnpm create astro@latest --template pkb-code/astro-template#with-trpc
 ```
 
 ---
@@ -57,7 +57,7 @@ This template adds **Vue**, **Primevue**, and **lucide-vue** icons to the base p
 **Command:**
 
 ```bash
-pnpm create astro@latest -- --template pkb-code/astro-template#with-vue
+pnpm create astro@latest --template pkb-code/astro-template#with-vue
 ```
 
 ---
@@ -71,7 +71,22 @@ This template adds **Drizzle ORM** to the base project, providing a modern and t
 **Command:**
 
 ```bash
-pnpm create astro@latest -- --template pkb-code/astro-template#with-drizzle
+pnpm create astro@latest --template pkb-code/astro-template#with-drizzle
+```
+
+### 🧩 **quantum-leap**
+
+This template integrates all other templates into a single project. It includes:
+
+- Base (Astro, Tailwind, Sentry, etc.)
+- Vue (Vue,Primevue, Lucide)
+- tRPC
+- Drizzle
+
+**Command:**
+
+```bash
+pnpm create astro@latest --template pkb-code/astro-template#quantum-leap
 ```
 
 ---
