@@ -76,6 +76,23 @@ pnpm create astro@latest -- --template pkb-code/astro-template#with-drizzle
 
 ---
 
+### 🧩 **quantum-leap**
+
+This template integrates all other templates into a single project. It includes:
+
+- Base (Astro, Tailwind, Sentry, etc.)
+- Vue (Vue,Primevue, Lucide)
+- tRPC
+- Drizzle
+
+**Command:**
+
+```bash
+pnpm create astro@latest --template pkb-code/astro-template#quantum-leap
+```
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License.
