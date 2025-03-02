@@ -1,8 +1,20 @@
 ---
 import Layout from '~/layouts/Layout.astro'
 import Welcome from '~/components/Welcome.astro'
+import App from '~/components/App.vue'
+
+let result: string
+try {
+  let q = await Astro.locals.api.foo.hello()
+  result = q.message
+} catch (error) {
+  console.error(error)
+}
+result = 'Forced Error for testing.'
 ---
 
 <Layout>
   <Welcome />
+  <p class='text-2xl font-bold text-center'>From Astro: {result}</p>
+  <App client:only='vue' />
 </Layout>
