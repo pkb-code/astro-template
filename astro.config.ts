@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import node from '@astrojs/node'
 import tailwindcss from '@tailwindcss/vite'
+import vue from '@astrojs/vue'
 import { sentryAstro } from '@altipla/sentry-astro'
 
 export default defineConfig({
@@ -12,6 +13,9 @@ export default defineConfig({
         project: 'pkbcode-backends-node',
         org: 'pkbcode',
       },
+    }),
+    vue({
+      appEntrypoint: 'app.ts',
     }),
   ],
   vite: {
