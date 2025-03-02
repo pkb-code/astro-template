@@ -74,6 +74,8 @@ This template adds **Drizzle ORM** to the base project, providing a modern and t
 pnpm create astro@latest --template pkb-code/astro-template#with-drizzle
 ```
 
+---
+
 ### 🧩 **quantum-leap**
 
 This template integrates all other templates into a single project. It includes:
