@@ -35,6 +35,9 @@ importers:
       temporal-polyfill:
         specifier: 0.2.5
         version: 0.2.5
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
     devDependencies:
       '@altipla/eslint-config-vue-ts':
         specifier: 1.0.7
